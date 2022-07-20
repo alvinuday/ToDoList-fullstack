@@ -1,0 +1,6 @@
+.userDisplay {
+  display: flex;
+}
+.userImage {
+  width: 25px;
+}
