@@ -31,7 +31,7 @@ const initialData = {
     },
     "task-5": {
       id: "task-5",
-      title: "Wizadry",
+      title: "Wizardry",
       img: user2,
       content: "Practice Spells with Hermoine",
     },
