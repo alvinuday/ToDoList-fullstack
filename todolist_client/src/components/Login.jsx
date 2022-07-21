@@ -4,13 +4,18 @@ import PropTypes from "prop-types";
 import { useNavigate } from "react-router-dom";
 import ErrorMessage from "./error.jsx";
 async function loginUser(credentials) {
-  return fetch("http://localhost:8080/login/", {
+  return fetch("https://todolistbackendalvin.herokuapp.com/login/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(credentials),
-  }).then((data) => data.json());
+  })
+    .then((data) => data.json())
+    .catch((err) => {
+      console.log(err);
+      alert(err);
+    });
 }
 
 export default function Login({ setToken }) {
