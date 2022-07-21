@@ -31,9 +31,10 @@
 .newTaskDesc {
   height: 80px;
   margin-bottom: 10px;
+  font-size: 12px;
 }
 .newTaskTitle {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 .newTaskUser {
