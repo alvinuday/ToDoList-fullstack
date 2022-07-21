@@ -8,7 +8,9 @@ import Chat from "../assets/chat.png";
 import Calendar from "../assets/calendar.png";
 import Setting from "../assets/setting.png";
 import Logout from "../assets/logout.png";
+import { useNavigate } from "react-router-dom";
 export default function DashboardLeftNav() {
+  let navigate = useNavigate();
   const [navLinks, setnavLinks] = useState([
     {
       logo: Home,
@@ -41,6 +43,11 @@ export default function DashboardLeftNav() {
       label: "Log Out",
     },
   ]);
+  const signOut = () => {
+    sessionStorage.clear();
+    navigate("/", { replace: true });
+    console.log("Sign Out");
+  };
   return (
     <div className="leftBox">
       <div className="leftBoxUpper">
@@ -50,7 +57,7 @@ export default function DashboardLeftNav() {
         </div>
       </div>
       <div className="navFooter">
-        <NavLink navLinks={footerLinks} />
+        <NavLink navLinks={footerLinks} signOut={signOut} />
       </div>
     </div>
   );

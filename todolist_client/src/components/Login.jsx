@@ -21,8 +21,8 @@ export default function Login({ setToken }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setEmail(e.target.Email.value);
-    setPassword(e.target.Password.value);
+    // setEmail(e.target.Email.value);
+    // setPassword(e.target.Password.value);
     setshowError(false);
     // Error Validation
     var validRegex =
@@ -33,8 +33,8 @@ export default function Login({ setToken }) {
       setshowError(true);
     } else {
       const credentials = {
-        email: email,
-        password: password,
+        email: e.target.Email.value,
+        password: e.target.Password.value,
       };
       console.log(credentials);
       const token = await loginUser(credentials);

@@ -1,0 +1,64 @@
+.newTaskWrapper {
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0px 0px 28px rgba(72, 174, 174, 0.07);
+  border-radius: 7px;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0px 0px 28px rgb(72 174 174 / 7%);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 20px;
+}
+.newTaskForm {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+.newTaskForm input {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  margin: 5px 0;
+  padding: 10px;
+  /* margin: 10px 10px; */
+}
+.newTaskDesc {
+  height: 80px;
+  margin-bottom: 10px;
+}
+.newTaskTitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+.newTaskUser {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+.addTaskButton {
+  background-color: transparent;
+  padding: 7px 7px;
+  border-radius: 7px;
+  background: #ecf3f3;
+  border-radius: 7px;
+  border: none;
+  color: #3d3d3d;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.addTaskButton:hover {
+  opacity: 0.6;
+}
+.addTaskUserImg {
+  width: 35px;
+  margin-left: 10px;
+}

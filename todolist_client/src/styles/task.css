@@ -1,0 +1,23 @@
+.taskWrapper {
+  background-color: blue;
+  margin: 20px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 28px rgba(72, 174, 174, 0.07);
+  border-radius: 7px;
+}
+.taskTitle {
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.taskContent {
+  color: #6b6b6b;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.taskUserImg {
+  width: 35px;
+}

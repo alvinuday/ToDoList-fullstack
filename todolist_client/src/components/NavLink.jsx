@@ -1,8 +1,8 @@
 import "../styles/NavLink.css";
 import { React, useState } from "react";
-export default function NavLink({ navLinks }) {
+export default function NavLink({ navLinks, signOut }) {
   return (
-    <div className="NavLinkWrapper">
+    <div className="NavLinkWrapper" onClick={signOut}>
       {navLinks.map((link, i) => (
         <div className="NavLink">
           <div className="NavLinkImage">

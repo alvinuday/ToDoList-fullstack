@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import React, { useState } from "react";
 import HomePage from "./views/Home.jsx";
 import Dashboard from "./views/Dashboard.jsx";
+// import Stage from "./components/Stage.jsx";
 // import Login from "./components/Login.jsx";
 import useToken from "./utils/useToken.jsx";
 import "./App.css";
@@ -15,6 +16,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<HomePage setToken={setToken} />} />
       <Route path="/Dashboard" element={<Dashboard />} />
+      {/* <Route path="/Stage" element={<Stage />} /> */}
     </Routes>
   );
 }
