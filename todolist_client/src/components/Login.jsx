@@ -62,7 +62,12 @@ export default function Login({ setToken }) {
       <div className="loginInput">
         <form onSubmit={handleSubmit}>
           <input type="text" id="Email" placeholder="Email" />
-          <input type="password" id="Password" placeholder="Password" />
+          <input
+            type="password"
+            id="Password"
+            placeholder="Password"
+            required
+          />
           {showError ? <ErrorMessage /> : ""}
           <div className="submitBox">
             <button type="submit" id="submitButton">
