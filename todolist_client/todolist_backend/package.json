@@ -1,0 +1,20 @@
+{
+  "name": "todo_backend",
+  "version": "0.0.1",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.1",
+    "dotenv": "^8.2.0",
+    "express": "^5.0.0-alpha.2",
+    "nodemon": "^2.0.19"
+  },
+  "keywords": [
+    "node",
+    "hyperdev",
+    "express"
+  ],
+  "license": "MIT"
+}
